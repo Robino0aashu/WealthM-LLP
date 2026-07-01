@@ -71,21 +71,14 @@
     border-bottom: 1px solid rgba(201,168,76,0.1);
   }
   .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.9rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: var(--white);
     display: flex;
     align-items: center;
-    gap: 12px;
-  }
+}
   .logo img {
-    height: 42px;
-    width: 42px;
+    height: 70px;   /* adjust as needed */
+    width: auto;    /* preserve aspect ratio */
     display: block;
-    border-radius: 8px;
-  }
+}
   .logo span { color: var(--gold); }
   .nav-links {
     display: flex; gap: 40px; list-style: none;
@@ -628,20 +621,16 @@
     align-items: center;
   }
   .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    color: var(--white);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .footer-logo img {
-    height: 36px;
-    width: 36px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-logo img {
+    width: 220px;
+    height: auto;
     display: block;
-    border-radius: 8px;
-  }
+    max-width: none;
+}
   .footer-logo span { color: var(--gold); }
   .footer-tagline { font-size: 0.8rem; color: var(--text-dim); margin-top: 6px; }
   .footer-links { display: flex; gap: 32px; }
@@ -737,7 +726,9 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <div class="logo"><img src="wealthM.svg" alt="WealthM LLP logo">Wealth<span>M</span> LLP</div>
+  <div class="logo">
+    <img src="wealthM.svg" alt="WealthM LLP logo">
+  </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -1099,7 +1090,7 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo"><img src="wealthM.svg" alt="WealthM LLP logo">Wealth<span>M</span> LLP</div>
+      <div class="footer-logo"><img src="wealthM.svg" alt="WealthM LLP logo"></div>
       <div class="footer-tagline">Wealth Creation · Management · Preservation</div>
     </div>
     <div class="footer-links">
@@ -1108,7 +1099,7 @@
       <a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </div>
-    <div class="footer-copy">© 2024 WealthM LLP. Patna, Bihar, India</div>
+    <div class="footer-copy">© 2026 WealthM LLP. Patna, Bihar, India</div>
   </div>
 </footer>
 
